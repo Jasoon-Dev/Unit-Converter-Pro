@@ -1143,7 +1143,7 @@ export default function UnitConverter() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Grade Calculator | GPA Tracker</h3>
                 <p className="mb-4">
-                  Convert units across length, weight, temperature, and more.
+                  Easily calculate your grades and track your GPA to stay on top of your academic progress.
                 </p>
               </div>
               <a
@@ -1206,7 +1206,7 @@ export default function UnitConverter() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Currency Converter</h3>
                 <p className="mb-4">
-                  Convert between hundreds of units across 30+ categories with precision and ease like length, weight, temperature, and more.
+                  Convert currencies instantly with accurate, real-time exchange rates. Perfect for travel, business, or everyday use.
                 </p>
               </div>
               <a
