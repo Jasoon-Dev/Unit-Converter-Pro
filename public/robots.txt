@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# AdSense
+User-agent: Mediapartners-Google
+Allow: /
+
+# Crawl-delay for bots
+Crawl-delay: 1

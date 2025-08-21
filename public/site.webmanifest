@@ -1,0 +1,21 @@
+{
+  "name": "Unit Converter Pro",
+  "short_name": "Unit Converter Pro",
+  "description": "Convert between hundreds of units across 30+ categories with precision and ease",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfgfzWGoaB-RLDxYqZ91eEijavLlFqmExBqWM2mpjfdyrqqIkJaEPbMOh9kOImEX33W9ahJ-rj2thX6NWUDs0_hv8z84gGw_tF58ohG4zgJK9BlWwEfiR8t1Xc0CSUq9_8xhzv0sSOJ6dw/s1600/converter.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfgfzWGoaB-RLDxYqZ91eEijavLlFqmExBqWM2mpjfdyrqqIkJaEPbMOh9kOImEX33W9ahJ-rj2thX6NWUDs0_hv8z84gGw_tF58ohG4zgJK9BlWwEfiR8t1Xc0CSUq9_8xhzv0sSOJ6dw/s1600/converter.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
