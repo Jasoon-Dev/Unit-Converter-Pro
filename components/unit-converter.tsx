@@ -995,7 +995,7 @@ export default function UnitConverter() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-1">
         {/* Sidebar Navigation */}
         <div className="lg:col-span-1">
   {/* Mobile Dropdown */}
