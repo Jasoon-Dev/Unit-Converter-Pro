@@ -1000,11 +1000,11 @@ export default function UnitConverter() {
         <div className="lg:col-span-1">
   {/* Mobile Dropdown */}
   <div className="block lg:hidden mb-4">
-    <label className="text-center block text-xl font-medium mb-2">Conversion Categories</label>
+    <label className="text-center block text-lg font-medium mb-2">Conversion Categories</label>
     <select
       value={activeTab}
       onChange={(e) => setActiveTab(e.target.value)}
-      className="w-full p-4 border rounded-xl text-lg bg-white dark:bg-gray-800 dark:text-white"
+      className="w-full p-4 border rounded-xl text-md bg-white dark:bg-gray-800 dark:text-white"
     >
       {filteredCategories.length > 0 ? (
         filteredCategories.map((category) => (
@@ -1111,7 +1111,7 @@ export default function UnitConverter() {
                   {renderConverter(category)}
 
                   {/* Additional Info */}
-                  <Card className="bg-blue-50 border-blue-200">
+                  <Card className="hidden md:flex bg-blue-50 border-blue-200">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-blue-900 mb-2">About {category.label} Conversions</h3>
                       <p className="text-blue-800 text-sm">
@@ -1127,7 +1127,7 @@ export default function UnitConverter() {
       </div>
 
             {/* More Tools Section */}
-        <section className="py-12 px-4">
+        <section className="py-3 px-4">
           <div className="max-w-6xl mx-auto text-center mb-8">
             <h2 className="text-3xl font-extrabold mb-4 text-black">
               More Tools
@@ -1137,7 +1137,7 @@ export default function UnitConverter() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="cursor-pointer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Unit Converter 1*/}
             <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-fuchsia-400 via-fuchsia-500 to-fuchsia-600 flex flex-col justify-between">
               <div>
@@ -1147,7 +1147,7 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-fuchsia-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
@@ -1155,7 +1155,7 @@ export default function UnitConverter() {
             </div>
 
             {/* Loan Calculator 2*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Quiz & Assignment Generator</h3>
                 <p className="mb-4">
@@ -1163,7 +1163,7 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-amber-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
@@ -1171,7 +1171,7 @@ export default function UnitConverter() {
             </div>
 
             {/* Tip Calculator 3*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-green-400 via-green-500 to-green-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-green-400 via-green-500 to-green-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Homework | Assignment Submission Portal</h3>
                 <p className="mb-4">
@@ -1179,7 +1179,7 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-green-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
@@ -1187,7 +1187,7 @@ export default function UnitConverter() {
             </div>
 
             {/* BMI Calculator 4*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Random Group Generator</h3>
                 <p className="mb-4">
@@ -1195,14 +1195,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+              
                 className="mt-4 inline-block px-4 py-2 bg-white text-blue-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 5*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-cyan-400 via-cyan-500 to-cyan-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-cyan-400 via-cyan-500 to-cyan-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Currency Converter</h3>
                 <p className="mb-4">
@@ -1217,7 +1217,7 @@ export default function UnitConverter() {
               </a>
             </div>
             {/* BMI Calculator 6*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Scientific Calculator</h3>
                 <p className="mb-4">
@@ -1225,14 +1225,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+               
                 className="mt-4 inline-block px-4 py-2 bg-white text-pink-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 7*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">PDF | WORD | EXCEL | PPT | IMG Conversion</h3>
                 <p className="mb-4">
@@ -1240,14 +1240,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+             
                 className="mt-4 inline-block px-4 py-2 bg-white text-yellow-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 8*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Name Picker</h3>
                 <p className="mb-4">
@@ -1255,14 +1255,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-purple-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 9*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-lime-400 via-lime-500 to-lime-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-lime-400 via-lime-500 to-lime-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Password Generator</h3>
                 <p className="mb-4">
@@ -1270,14 +1270,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+             
                 className="mt-4 inline-block px-4 py-2 bg-white text-lime-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 10*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Loan Calculator</h3>
                 <p className="mb-4">
@@ -1285,14 +1285,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-orange-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 11*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">QR Code Generator</h3>
                 <p className="mb-4">
@@ -1300,14 +1300,14 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+                
                 className="mt-4 inline-block px-4 py-2 bg-white text-teal-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
               </a>
             </div>
             {/* BMI Calculator 12*/}
-            <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-gray-400 via-gray-500 to-gray-600 flex flex-col justify-between">
+            <div className="cursor-pointer p-6 rounded-2xl shadow-lg hover:shadow-xl transition text-center text-white bg-gradient-to-br from-gray-400 via-gray-500 to-gray-600 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold mb-2">Electric Bill Calculator</h3>
                 <p className="mb-4">
@@ -1315,7 +1315,7 @@ export default function UnitConverter() {
                 </p>
               </div>
               <a
-                href=""
+              
                 className="mt-4 inline-block px-4 py-2 bg-white text-gray-600 font-bold rounded-full hover:bg-gray-200 transition"
               >
                 Coming Soon
