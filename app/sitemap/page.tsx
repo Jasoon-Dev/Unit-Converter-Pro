@@ -75,45 +75,53 @@ export default function SitemapPage() {
           <p className="text-gray-600">Complete overview of all pages and conversion tools available</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Main Pages */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-xl text-blue-700">Main Pages</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                {mainPages.map((page) => (
-                  <div key={page.href} className="border-b border-gray-100 pb-2 last:border-b-0">
-                    <Link href={page.href} className="text-blue-600 hover:text-blue-800 font-medium">
-                      {page.name}
-                    </Link>
-                    <p className="text-sm text-gray-600">{page.description}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  {/* Main Pages */}
+  <Card className="h-full">
+    <CardHeader>
+      <CardTitle className="text-xl text-blue-700">Main Pages</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="space-y-3">
+        {mainPages.map((page) => (
+          <div key={page.href} className="border-b border-gray-100 pb-2 last:border-b-0">
+            <Link
+              href={page.href}
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              {page.name}
+            </Link>
+            <p className="text-sm text-gray-600">{page.description}</p>
+          </div>
+        ))}
+      </div>
+    </CardContent>
+  </Card>
 
-          {/* Conversion Categories */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-xl text-green-700">Conversion Categories</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2 max-h-96 overfl ow-y-auto">
-                {conversionCategories.map((category) => (
-                  <div key={category.href} className="border-b border-gray-100 pb-2 last:border-b-0">
-                    <Link href={category.href} className="text-green-600 hover:text-green-800 font-medium text-sm">
-                      {category.name}
-                    </Link>
-                    <p className="text-xs text-gray-600">{category.description}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+  {/* Conversion Categories */}
+  <Card className="h-full">
+    <CardHeader>
+      <CardTitle className="text-xl text-green-700">Conversion Categories</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="space-y-2 max-h-[500px] overflow-y-auto pr-2">
+        {conversionCategories.map((category) => (
+          <div key={category.href} className="border-b border-gray-100 pb-2 last:border-b-0">
+            <Link
+              href={category.href}
+              className="text-green-600 hover:text-green-800 font-medium text-sm"
+            >
+              {category.name}
+            </Link>
+            <p className="text-xs text-gray-600">{category.description}</p>
+          </div>
+        ))}
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
+
 
         {/* Statistics */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
